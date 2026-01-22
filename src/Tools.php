@@ -125,7 +125,7 @@ class Tools extends RestCurl
         $dom->formatOutput = false;
         $dom->preserveWhiteSpace = false;
         $dom->loadXML($content);
-        dump($dom->saveXML());
+        // dump($dom->saveXML());
         return $dom->C14N(false, false, null, null);
     }
 }
