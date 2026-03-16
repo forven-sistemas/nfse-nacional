@@ -115,7 +115,7 @@ class Tools extends RestCurl
      */
     public function distribuirDfe(int $ultimoNsu = 0): array
     {
-        $operacao = 'DFe/' . $ultimoNsu;
+        $operacao = 'contribuintes/DFe/' . $ultimoNsu;
         $retorno = $this->getData($operacao, null, 2);
         return $retorno ?? [];
     }
@@ -131,7 +131,7 @@ class Tools extends RestCurl
      */
     public function consultarDfePorNsu(int $nsu): array
     {
-        $operacao = 'DFe/' . $nsu;
+        $operacao = 'contribuintes/DFe/' . $nsu;
         $retorno = $this->getData($operacao, null, 2);
         return $retorno ?? [];
     }
